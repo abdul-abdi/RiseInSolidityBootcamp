@@ -23,12 +23,6 @@ contract Example {
         _;
     }
 
-    // modifier onlyUser() {
-    //     require(msg.sender == user, "Only user can call this function");
-    //     _;
-    // }
-
-
     constructor(uint initial_value, string memory description) {
         owner = msg.sender;
         counter = Counter(initial_value, description);
